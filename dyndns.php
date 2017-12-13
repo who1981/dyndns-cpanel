@@ -49,6 +49,8 @@ if(!($_SERVER['PHP_AUTH_USER']==$php_auth_user && $_SERVER['PHP_AUTH_PW']==$php_
 // Make sure a host was specified
 if (empty($_GET['hostname']))
 	die('Must specify host');
+	
+	define('DYNDNS_ALLHOSTS', "");
 
 // Use server value for IP if none was specified
 $ip = $_GET['myip'];
